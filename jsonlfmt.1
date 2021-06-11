@@ -1,0 +1,24 @@
+.TH jsonlfmt  "10 June 2021" "" ""
+.RS
+.SS Usage
+$ \fBjsonlfmt\fP [-s <spacing>] [-w] <filename>
+.PP
+.SS Options
+.RS
+.TP
+.B
+\fB--write\fP, \fB-w\fP
+Write the output to the file                               (default: false)
+.TP
+.B
+\fB--spacing\fP, \fB-s\fP
+A number or string for the spacing for the result          (default: 2)
+.RE
+.PP
+.SS Examples
+$ \fBjsonlfmt\fP index.jsonl
+
+  ...
+  (formatted JSONL)
+
+$ \fBjsonlfmt -w\fP index.jsonl
