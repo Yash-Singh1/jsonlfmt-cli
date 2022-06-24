@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-const jsonlfmt = require('jsonlfmt');
-const meow = require('meow');
-const fs = require('fs');
-const updateNotifier = require('update-notifier');
-const pkg = require('./package.json');
+import jsonlfmt from 'jsonlfmt';
+import meow from 'meow';
+import * as fs from 'node:fs';
+import updateNotifier from 'update-notifier';
 
+const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
 updateNotifier({ pkg }).notify();
 
 const cli = meow(
@@ -39,14 +39,15 @@ Examples
         alias: 's',
         default: '2'
       }
-    }
+    },
+    importMeta: import.meta
   }
 );
 
 const results = jsonlfmt(
   fs.readFileSync(cli.input[cli.input.length - 1], 'utf-8'),
-  isNaN(parseFloat(cli.flags.spacing, 10))
-    ? cli.flags.spacing
+  isNaN(parseFloat(cli.flags.spacing))
+    ? undefined
     : parseFloat(cli.flags.spacing)
 );
 

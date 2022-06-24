@@ -1,2 +1,4 @@
 .github/
 .prettierrc.json
+cli.ts
+tsconfig.json

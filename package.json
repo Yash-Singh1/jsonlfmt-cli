@@ -2,9 +2,10 @@
   "name": "jsonlfmt-cli",
   "version": "1.1.0",
   "description": "CLI for jsonlfmt",
-  "main": "cli.js",
+  "main": "cli.mjs",
+  "type": "module",
   "bin": {
-    "jsonlfmt": "./cli.js"
+    "jsonlfmt": "./cli.mjs"
   },
   "keywords": [
     "jsonlines",
@@ -28,5 +29,15 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Yash-Singh1/jsonlfmt-cli"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc && mv cli.js cli.mjs"
   }
 }

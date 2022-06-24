@@ -5,3 +5,7 @@ package-lock.json
 # Editor config
 .vscode/
 .idea/
+
+# Build
+cli.js
+cli.mjs

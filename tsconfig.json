@@ -1,0 +1,9 @@
+{
+  "files": ["cli.ts"],
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}
