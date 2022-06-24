@@ -17,7 +17,7 @@
   "dependencies": {
     "jsonlfmt": "^1.0.0",
     "meow": "^10.0.1",
-    "update-notifier": "^5.1.0"
+    "update-notifier": "^6.0.2"
   },
   "man": [
     "jsonlfmt.1"
