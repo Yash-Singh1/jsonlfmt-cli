@@ -1,4 +1,5 @@
 .github/
 .prettierrc.json
+test/
 cli.ts
 tsconfig.json

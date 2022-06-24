@@ -1,5 +1,5 @@
 {
-  "files": ["cli.ts"],
+  "files": ["cli.ts", "test/index.test.ts"],
   "compilerOptions": {
     "moduleResolution": "NodeNext",
     "module": "ESNext",

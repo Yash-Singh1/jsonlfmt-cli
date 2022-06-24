@@ -9,3 +9,5 @@ package-lock.json
 # Build
 cli.js
 cli.mjs
+test/index.test.js
+test/index.test.mjs
